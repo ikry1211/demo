@@ -1,28 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+<MyHeader></MyHeader>
     );
   }
 }
+
+const MyHeader=styled.div`
+height: auto;
+width:100%;
+background: #FFC107;
+padding-top: 10vw;
+padding-bottom: 10vw;
+box-shadow: 0 6px 5px #9D9D9D;
+z-index: 999;
+`;
 
 export default App;
